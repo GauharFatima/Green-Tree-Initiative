@@ -1,6 +1,10 @@
  /* Google fonts
  */
 
+ @import url('https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Open+Sans&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Rambla&display=swap');
+ 
   @font-face{
     font-family: 'flood';
     /* font-stretch: condensed; */
@@ -32,7 +36,7 @@
   font-family: 'Rambla', sans-serif;
  }
 
-nav{
+ nav{
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
  
@@ -58,14 +62,6 @@ nav{
   text-align: center;
   
 }
-.nav-items a {
-    text-decoration: none;
-    padding-left: 1em;
-    font-family: Helvetica;
-    color: #354463;
-    font-size: 1.3em;
-    
-}
 
 .donate{
   /* background: chocolate; */
@@ -73,19 +69,29 @@ nav{
   padding: 1em 1em;
   padding-top: 2em;
 }
-.donate button {
-    padding: 6px 10px;
-    border-radius: 30px;
-    border-color: #C1F7D5;
-    background: #C1F7D5;
-    box-shadow: none;
-  }
+
+.nav-items a {
+  text-decoration: none;
+  padding-left: 1em;
+ 
+  color: #354463;
+  font-size: 1.3em;
+  
+}
+
 .donate button a{
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1em;
+  font-size: 1.5em;
   color: #354463
 }
+.donate button {
+  padding: 6px 10px;
+  border-radius: 30px;
+  background: #C1F7D5;
+  box-shadow: none;
+}
+
+
 /* Navigation section ends here */
 
  
@@ -96,7 +102,7 @@ nav{
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;  
-  background-image: url('../assets/images/home-hero.png');  
+  background-image: url('/assets/images/hero.png');  
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center;
@@ -156,17 +162,13 @@ nav{
 }
  
 .take-action-item h3 {
-   /* font: normal normal bold 28px/36px Helvetica; */
   font-size: 2em;
   padding-bottom: 0.2em;
-  font-weight: bold;
-  font-family: Helvetica;
-  /* font-family: 'Helvetica', sans-serif; */
+  font-family: 'Roboto', sans-serif;
 }
 
 .take-action-item p{
-  /* font-size: 1.5em; */
-  font: normal normal 300 16px/24px Helvetica;
+  font-size: 1.5em;
 }
 
 .take-action .take-action-tag {
@@ -202,7 +204,7 @@ nav{
 
 .our-mission-heading .our-mission-text {
   font-size: 2.6em;
-  color: #FFFFFF;
+  color: antiquewhite;
 }
  
 .our-mission-content{
@@ -226,8 +228,7 @@ nav{
 }
 
 .our-mission-content-text{
-  font-family: Helvetica;
-  font-size: small;
+ 
   padding-left: 2em;
   padding-right: 2em;
   padding-bottom: 2em;
@@ -240,21 +241,14 @@ nav{
    margin-right: 2em;
    padding: 0.5em 1em;
    margin-bottom: 1em;
-   /* background: #C1F7D5; */
-   /* color: #354463; */
+   background: #C1F7D5;
+   color: #354463;
    font-size: 1em;
    border-radius: 3em;
-   background-color: #C1F7D5;
-   color: #354463;
-   border: none;
 }
 .our-mission-button a{
   text-decoration: none;
   color: #354463;
-  font-size: 0.7em;
-  justify-items: center;
-  font-weight: bold;
-  font-family: Helvetica;
 }
 /*  */
 
@@ -263,8 +257,6 @@ nav{
 .our-mission-content-text h2{
   padding-bottom: 1em;
   font-size: 25px;
-  color: #354463;
-  font-family: Helvetica;
 }
 
 .our-mission-content-text button{
@@ -348,13 +340,8 @@ nav{
   font-size: 1em;
   font-weight: bold;
   border-radius: 3em;
-  /* background-color: #C1F7D5;
-  color: #354463; */
-  font-size: 1em;
-   border-radius: 3em;
-   background-color: #C1F7D5;
-   color: #354463;
-   border: none;
+  background-color: #C1F7D5;
+  color: #354463;
 }
 
  
@@ -395,10 +382,6 @@ nav{
   margin-left: 2em;
   margin-top: 2em;
   margin-bottom: 4em;
-  color: #354463;
-  border: none;
-  /* margin-top: 4em; */
-
 }
 
 .stories-image img {
@@ -471,8 +454,6 @@ nav{
   .button-read-more-event{
     align-self: start;
     justify-self: start;
-    border-color: #C1F7D5;
-    border: none;
   }
 
   .event-tag{
@@ -511,19 +492,9 @@ nav{
    }
 
    .subscribe-form-input{
-    /* font-size: 1em;
+    font-size: 1.3em;
     padding: 0.2em;
-    border-radius: 1em;
-    border-color: white;
-    border: none; */
-    margin-left: 0em; 
-    font-size: 1em;
-    padding: 0.5em 2em;
     border-radius: 3em;
-    border: none;
-    background-color: white;
-    font-weight: 300;
-    box-shadow: none;
    }
   .subscribe-form-btn{
     margin-left: 0em; 
@@ -608,7 +579,7 @@ nav{
 
   /* hero section starts here  */
   .hero-section{
-    background-image: url('../assets/images/hero-mobile.png');
+    background-image: url('/assets/images/hero-mobile.png');
   }
     
    .hero-content
@@ -870,7 +841,7 @@ nav{
   .take-action-item h3 {
     font-size: 1em;
     padding-bottom: 0.2em;
-    font-family: Helvetica , sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   
   .take-action-item p{
